@@ -1,0 +1,9 @@
+c:\users\cristiam\documents\visual studio 2013\Projects\SO\SO\bin\Debug\SO.exe.config
+c:\users\cristiam\documents\visual studio 2013\Projects\SO\SO\bin\Debug\SO.exe
+c:\users\cristiam\documents\visual studio 2013\Projects\SO\SO\bin\Debug\SO.pdb
+c:\users\cristiam\documents\visual studio 2013\Projects\SO\SO\obj\Debug\SO.csprojResolveAssemblyReference.cache
+c:\users\cristiam\documents\visual studio 2013\Projects\SO\SO\obj\Debug\SO.Properties.Resources.resources
+c:\users\cristiam\documents\visual studio 2013\Projects\SO\SO\obj\Debug\SO.csproj.GenerateResource.Cache
+c:\users\cristiam\documents\visual studio 2013\Projects\SO\SO\obj\Debug\SO.exe
+c:\users\cristiam\documents\visual studio 2013\Projects\SO\SO\obj\Debug\SO.pdb
+C:\Users\Cristiam\Documents\Visual Studio 2013\Projects\SO\SO\obj\Debug\SO.Frm_Navegador.resources
