@@ -16,7 +16,11 @@ namespace SO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD:SO/Program.cs
             Application.Run(new Frm_Navegador());
+=======
+            Application.Run(new frmWebBrowser());
+>>>>>>> origin/master:WindowsFormsApplication1/Program.cs
         }
     }
 }
