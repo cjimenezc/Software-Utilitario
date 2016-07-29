@@ -40,10 +40,14 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.btn_Buscar = new System.Windows.Forms.Button();
             this.lb_CPU = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_navegar = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.administrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verProcesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.anadirUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.performanceCounter2)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // performanceCounter1
@@ -129,6 +133,7 @@
             this.btn_Buscar.TabIndex = 25;
             this.btn_Buscar.Text = "BUSCAR";
             this.btn_Buscar.UseVisualStyleBackColor = true;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
             // lb_CPU
             // 
@@ -140,30 +145,54 @@
             this.lb_CPU.Size = new System.Drawing.Size(0, 13);
             this.lb_CPU.TabIndex = 26;
             // 
-            // textBox1
+            // txt_navegar
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txt_navegar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(452, 26);
-            this.textBox1.TabIndex = 27;
+            this.txt_navegar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_navegar.Location = new System.Drawing.Point(12, 38);
+            this.txt_navegar.Name = "txt_navegar";
+            this.txt_navegar.Size = new System.Drawing.Size(452, 26);
+            this.txt_navegar.TabIndex = 27;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(778, 24);
             this.menuStrip1.TabIndex = 28;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // administrarToolStripMenuItem
+            // 
+            this.administrarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verProcesosToolStripMenuItem,
+            this.anadirUsuariosToolStripMenuItem});
+            this.administrarToolStripMenuItem.Name = "administrarToolStripMenuItem";
+            this.administrarToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.administrarToolStripMenuItem.Text = "Administrar";
+            // 
+            // verProcesosToolStripMenuItem
+            // 
+            this.verProcesosToolStripMenuItem.Name = "verProcesosToolStripMenuItem";
+            this.verProcesosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.verProcesosToolStripMenuItem.Text = "Ver procesos";
+            this.verProcesosToolStripMenuItem.Click += new System.EventHandler(this.verProcesosToolStripMenuItem_Click);
+            // 
+            // anadirUsuariosToolStripMenuItem
+            // 
+            this.anadirUsuariosToolStripMenuItem.Name = "anadirUsuariosToolStripMenuItem";
+            this.anadirUsuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.anadirUsuariosToolStripMenuItem.Text = "Usuarios";
+            // 
             // Frm_Navegador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 439);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_navegar);
             this.Controls.Add(this.lb_CPU);
             this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.webBrowser1);
@@ -179,6 +208,8 @@
             this.Load += new System.EventHandler(this.Frm_Navegador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.performanceCounter2)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,8 +228,11 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button btn_Buscar;
         private System.Windows.Forms.Label lb_CPU;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_navegar;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem administrarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verProcesosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem anadirUsuariosToolStripMenuItem;
     }
 }
 

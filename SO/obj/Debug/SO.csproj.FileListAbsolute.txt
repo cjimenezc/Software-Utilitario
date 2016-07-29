@@ -7,3 +7,20 @@ c:\users\cristiam\documents\visual studio 2013\Projects\SO\SO\obj\Debug\SO.cspro
 c:\users\cristiam\documents\visual studio 2013\Projects\SO\SO\obj\Debug\SO.exe
 c:\users\cristiam\documents\visual studio 2013\Projects\SO\SO\obj\Debug\SO.pdb
 C:\Users\Cristiam\Documents\Visual Studio 2013\Projects\SO\SO\obj\Debug\SO.Frm_Navegador.resources
+C:\Users\Cristiam\Downloads\WindowsFormsApplication1\Software-Utilitario\SO\bin\Debug\SO.exe.config
+C:\Users\Cristiam\Downloads\WindowsFormsApplication1\Software-Utilitario\SO\obj\Debug\SO.exe
+C:\Users\Cristiam\Downloads\WindowsFormsApplication1\Software-Utilitario\SO\obj\Debug\SO.pdb
+C:\Users\Cristiam\Downloads\WindowsFormsApplication1\Software-Utilitario\SO\obj\Debug\SO.csprojResolveAssemblyReference.cache
+C:\Users\Cristiam\Downloads\WindowsFormsApplication1\Software-Utilitario\SO\obj\Debug\SO.Frm_Navegador.resources
+C:\Users\Cristiam\Downloads\WindowsFormsApplication1\Software-Utilitario\SO\obj\Debug\SO.Properties.Resources.resources
+C:\Users\Cristiam\Downloads\WindowsFormsApplication1\Software-Utilitario\SO\obj\Debug\SO.csproj.GenerateResource.Cache
+C:\Users\Cristiam\Desktop\so\SO\bin\Debug\SO.exe.config
+C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.exe
+C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.csprojResolveAssemblyReference.cache
+C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.Frm_Navegador.resources
+C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.Properties.Resources.resources
+C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.csproj.GenerateResource.Cache
+C:\Users\Cristiam\Desktop\so\SO\bin\Debug\SO.exe
+C:\Users\Cristiam\Desktop\so\SO\bin\Debug\SO.pdb
+C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.pdb
+C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.Procesos.resources

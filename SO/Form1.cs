@@ -31,6 +31,17 @@ namespace SO
             webBrowser1.Navigate("www.google.com");
         }
 
+        private void btn_Buscar_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate(txt_navegar.Text);
+        }
+
+        private void verProcesosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Procesos FrmNav = new Procesos();
+           FrmNav.Show();
+        }
+
     
     }
 }
