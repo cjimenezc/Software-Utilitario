@@ -17,7 +17,7 @@ namespace SO
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new Frm_Navegador());
+            Application.Run(new login());
 
         }
     }

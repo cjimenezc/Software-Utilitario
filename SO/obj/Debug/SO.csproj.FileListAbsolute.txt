@@ -24,3 +24,8 @@ C:\Users\Cristiam\Desktop\so\SO\bin\Debug\SO.exe
 C:\Users\Cristiam\Desktop\so\SO\bin\Debug\SO.pdb
 C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.pdb
 C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.Procesos.resources
+C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.login.resources
+C:\Users\Cristiam\Desktop\so\SO\bin\Debug\IU\Principal.resx
+C:\Users\Cristiam\Desktop\so\SO\bin\Debug\IU\Principal.cs
+C:\Users\Cristiam\Desktop\so\SO\bin\Debug\IU\Principal.Designer.cs
+C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.NuevoUsuario.resources

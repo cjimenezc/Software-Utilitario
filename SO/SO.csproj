@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\C_brow7ser.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,24 +47,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="logica\Autentica.cs" />
+    <Compile Include="logica\Conexion.cs" />
+    <Compile Include="IU\NuevoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="IU\NuevoUsuario.Designer.cs">
+      <DependentUpon>NuevoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Procesos.cs">
+    <Compile Include="IU\Principal.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="IU\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="IU\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Procesos.Designer.cs">
+    <Compile Include="IU\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IU\Procesos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\Procesos.Designer.cs">
       <DependentUpon>Procesos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="logica\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="IU\NuevoUsuario.resx">
+      <DependentUpon>NuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Procesos.resx">
+    <EmbeddedResource Include="IU\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\Procesos.resx">
       <DependentUpon>Procesos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -72,6 +98,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -85,6 +112,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\C_brow7ser.ico" />
+    <None Include="Resources\buscar-buscar-ampliar-icono-9048-32.png" />
+    <None Include="Resources\buscar-buscar-ampliar-icono-9048-16.png" />
+    <None Include="Resources\actualiza-icono-6505-32.png" />
+    <None Include="Resources\derecho-de-la-flecha-azul-icono-8215-32.png" />
+    <None Include="Resources\flecha-de-la-izquierda-icono-9297-32.png" />
+    <None Include="Resources\flecha1.jpg" />
+    <None Include="Resources\Sin título.jpg" />
+    <None Include="Resources\view_refresh.png" />
+    <None Include="Resources\flecha.jpg" />
+    <None Include="Resources\anadir-icono-masculino-del-usuario-3289.png" />
+    <None Include="Resources\floppy_disk_48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

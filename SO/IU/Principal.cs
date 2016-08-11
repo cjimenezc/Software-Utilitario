@@ -12,11 +12,15 @@ namespace SO
 {
     public partial class Frm_Navegador : Form
     {
+        public string usuario;
         public Frm_Navegador()
         {
+          
             InitializeComponent();
+            
             timer1.Start();
         }
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -24,6 +28,7 @@ namespace SO
             lb_RAM.Text = pgb_RAM.Value.ToString()+ "%";
             pgb_CPU.Value = (int)(performanceCounter2.NextValue());
             lb_CPU.Text = pgb_CPU.Value.ToString()+"%";
+            
         }
 
         private void Frm_Navegador_Load(object sender, EventArgs e)
@@ -40,6 +45,23 @@ namespace SO
         {
             Procesos FrmNav = new Procesos();
            FrmNav.Show();
+        }
+
+        private void pgb_RAM_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nuevoUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NuevoUsuario FrmUsu = new NuevoUsuario();
+            FrmUsu.Show();
+
         }
 
     
