@@ -29,3 +29,29 @@ C:\Users\Cristiam\Desktop\so\SO\bin\Debug\IU\Principal.resx
 C:\Users\Cristiam\Desktop\so\SO\bin\Debug\IU\Principal.cs
 C:\Users\Cristiam\Desktop\so\SO\bin\Debug\IU\Principal.Designer.cs
 C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.NuevoUsuario.resources
+C:\Users\Cristiam\Desktop\so\SO\obj\Debug\SO.Buscar_Usuario.resources
+C:\Users\HELLEN\Downloads\so\so\SO\obj\Debug\SO.csprojResolveAssemblyReference.cache
+C:\Users\HELLEN\Downloads\so\so\SO\obj\Debug\SO.Buscar_Usuario.resources
+C:\Users\HELLEN\Downloads\so\so\SO\obj\Debug\SO.NuevoUsuario.resources
+C:\Users\HELLEN\Downloads\so\so\SO\obj\Debug\SO.Frm_Navegador.resources
+C:\Users\HELLEN\Downloads\so\so\SO\obj\Debug\SO.login.resources
+C:\Users\HELLEN\Downloads\so\so\SO\obj\Debug\SO.Procesos.resources
+C:\Users\HELLEN\Downloads\so\so\SO\obj\Debug\SO.Properties.Resources.resources
+C:\Users\HELLEN\Downloads\so\so\SO\obj\Debug\SO.csproj.GenerateResource.Cache
+C:\Users\HELLEN\Downloads\so\so\SO\bin\Debug\SO.exe.config
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\bin\Debug\SO.exe.config
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\bin\Debug\IU\Principal.resx
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\bin\Debug\IU\Principal.cs
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\bin\Debug\IU\Principal.Designer.cs
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\bin\Debug\SO.exe
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\bin\Debug\SO.pdb
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\obj\Debug\SO.csprojResolveAssemblyReference.cache
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\obj\Debug\SO.Buscar_Usuario.resources
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\obj\Debug\SO.NuevoUsuario.resources
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\obj\Debug\SO.Frm_Navegador.resources
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\obj\Debug\SO.login.resources
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\obj\Debug\SO.Procesos.resources
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\obj\Debug\SO.Properties.Resources.resources
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\obj\Debug\SO.csproj.GenerateResource.Cache
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\obj\Debug\SO.exe
+C:\Users\Cristiam\Downloads\so hellen\so\so\SO\obj\Debug\SO.pdb

@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SO</RootNamespace>
     <AssemblyName>SO</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buscar Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar Usuario.Designer.cs">
+      <DependentUpon>Buscar Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="logica\Autentica.cs" />
     <Compile Include="logica\Conexion.cs" />
     <Compile Include="IU\NuevoUsuario.cs">
@@ -76,7 +83,11 @@
       <DependentUpon>Procesos.cs</DependentUpon>
     </Compile>
     <Compile Include="logica\Program.cs" />
+    <Compile Include="logica\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Buscar Usuario.resx">
+      <DependentUpon>Buscar Usuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IU\NuevoUsuario.resx">
       <DependentUpon>NuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,7 +131,12 @@
     <None Include="Resources\cinta.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\flecha2.jpg" />
+    <None Include="Resources\volver.jpg" />
+    <None Include="Resources\buscar-buscar-ampliar-icono-9048-321.png" />
     <Content Include="Resources\C_brow7ser.ico" />
+    <None Include="Resources\images.jpeg" />
+    <None Include="Resources\editar.PNG" />
     <None Include="Resources\buscar-buscar-ampliar-icono-9048-32.png" />
     <None Include="Resources\buscar-buscar-ampliar-icono-9048-16.png" />
     <None Include="Resources\actualiza-icono-6505-32.png" />

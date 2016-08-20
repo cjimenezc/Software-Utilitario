@@ -46,13 +46,14 @@
             this.administrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verProcesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.anadirUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btn_imprimir = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
             this.lb_usuario = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.nuevoUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.historialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.performanceCounter2)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -95,7 +96,6 @@
             this.pgb_RAM.RightToLeftLayout = true;
             this.pgb_RAM.Size = new System.Drawing.Size(162, 16);
             this.pgb_RAM.TabIndex = 18;
-            this.pgb_RAM.Click += new System.EventHandler(this.pgb_RAM_Click);
             // 
             // lb_RAM
             // 
@@ -140,6 +140,7 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(773, 341);
             this.webBrowser1.TabIndex = 8;
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // btn_Buscar
             // 
@@ -178,7 +179,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.administrarToolStripMenuItem});
+            this.administrarToolStripMenuItem,
+            this.btn_imprimir});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(778, 24);
@@ -205,10 +207,32 @@
             // 
             this.anadirUsuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoUsuarioToolStripMenuItem,
-            this.historialToolStripMenuItem});
+            this.buscarToolStripMenuItem});
             this.anadirUsuariosToolStripMenuItem.Name = "anadirUsuariosToolStripMenuItem";
             this.anadirUsuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.anadirUsuariosToolStripMenuItem.Text = "Usuarios";
+            this.anadirUsuariosToolStripMenuItem.Visible = false;
+            // 
+            // nuevoUsuarioToolStripMenuItem
+            // 
+            this.nuevoUsuarioToolStripMenuItem.Name = "nuevoUsuarioToolStripMenuItem";
+            this.nuevoUsuarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nuevoUsuarioToolStripMenuItem.Text = "Nuevo ";
+            this.nuevoUsuarioToolStripMenuItem.Click += new System.EventHandler(this.nuevoUsuarioToolStripMenuItem_Click);
+            // 
+            // buscarToolStripMenuItem
+            // 
+            this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.buscarToolStripMenuItem.Text = "Buscar ";
+            this.buscarToolStripMenuItem.Click += new System.EventHandler(this.buscarToolStripMenuItem_Click);
+            // 
+            // btn_imprimir
+            // 
+            this.btn_imprimir.Name = "btn_imprimir";
+            this.btn_imprimir.Size = new System.Drawing.Size(65, 20);
+            this.btn_imprimir.Text = "Imprimir";
+            this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
             // 
             // label3
             // 
@@ -224,7 +248,6 @@
             this.label3.Text = "Usuario:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label3.UseCompatibleTextRendering = true;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // lb_usuario
             // 
@@ -240,49 +263,39 @@
             this.lb_usuario.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.lb_usuario.UseCompatibleTextRendering = true;
             // 
-            // button2
+            // btnRefresh
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackgroundImage = global::SO.Properties.Resources.actualiza_icono_6505_32;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Location = new System.Drawing.Point(451, 43);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(47, 38);
-            this.button2.TabIndex = 32;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRefresh.BackgroundImage = global::SO.Properties.Resources.actualiza_icono_6505_32;
+            this.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnRefresh.Location = new System.Drawing.Point(451, 43);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(47, 38);
+            this.btnRefresh.TabIndex = 32;
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // button1
+            // btnSiguiente
             // 
-            this.button1.BackgroundImage = global::SO.Properties.Resources.derecho_de_la_flecha_azul_icono_8215_32;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(54, 40);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 38);
-            this.button1.TabIndex = 33;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSiguiente.BackgroundImage = global::SO.Properties.Resources.derecho_de_la_flecha_azul_icono_8215_32;
+            this.btnSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSiguiente.Location = new System.Drawing.Point(54, 40);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(46, 38);
+            this.btnSiguiente.TabIndex = 33;
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
-            // button3
+            // btnAnterior
             // 
-            this.button3.BackgroundImage = global::SO.Properties.Resources.flecha_de_la_izquierda_icono_9297_32;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Location = new System.Drawing.Point(2, 40);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(46, 38);
-            this.button3.TabIndex = 34;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // nuevoUsuarioToolStripMenuItem
-            // 
-            this.nuevoUsuarioToolStripMenuItem.Name = "nuevoUsuarioToolStripMenuItem";
-            this.nuevoUsuarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.nuevoUsuarioToolStripMenuItem.Text = "Nuevo Usuario";
-            this.nuevoUsuarioToolStripMenuItem.Click += new System.EventHandler(this.nuevoUsuarioToolStripMenuItem_Click);
-            // 
-            // historialToolStripMenuItem
-            // 
-            this.historialToolStripMenuItem.Name = "historialToolStripMenuItem";
-            this.historialToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.historialToolStripMenuItem.Text = "Historial ";
+            this.btnAnterior.BackgroundImage = global::SO.Properties.Resources.flecha_de_la_izquierda_icono_9297_32;
+            this.btnAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAnterior.Location = new System.Drawing.Point(2, 40);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(46, 38);
+            this.btnAnterior.TabIndex = 34;
+            this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // Frm_Navegador
             // 
@@ -291,9 +304,9 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::SO.Properties.Resources.cinta;
             this.ClientSize = new System.Drawing.Size(778, 439);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAnterior);
+            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lb_usuario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_navegar);
@@ -340,14 +353,15 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem administrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verProcesosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem anadirUsuariosToolStripMenuItem;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label lb_usuario;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.ToolStripMenuItem nuevoUsuarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem historialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btn_imprimir;
+        private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem anadirUsuariosToolStripMenuItem;
     }
 }
 

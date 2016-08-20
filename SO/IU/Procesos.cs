@@ -24,28 +24,25 @@ namespace SO
             int fila = 0;
             foreach (Process p in Process.GetProcesses())
             {
-                dataGridView1.Rows.Add(p.ProcessName,p.SessionId, (p.WorkingSet64/1024));//agregar nombre proceso
+                dataGridView1.Rows.Add(p.ProcessName, p.SessionId, (p.WorkingSet64 / 1024));//agregar nombre proceso
                 /*dataGridView1.Rows.Add ();// RAM del procesoo*/
-            
-                    celda++;
-                    fila++;
-                }
-               
+                celda++;
+                fila++;
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnFinalizar_Click(object sender, EventArgs e)
         {
-           
-                foreach (Process p in Process.GetProcesses())
+
+            foreach (Process p in Process.GetProcesses())
+            {
+                String proceso = this.dataGridView1.CurrentCell.Value.ToString();
+                if (p.ProcessName == proceso)
                 {
-                    String proceso = this.dataGridView1.CurrentCell.Value.ToString();
-                    if (p.ProcessName == proceso)
-                    {
-                        p.Kill(); // elimina el proceso
-                        MessageBox.Show("Proceso Eliminado ","Eliminar", MessageBoxButtons.OK);
-                    }
+                    p.Kill(); // elimina el proceso
+                    MessageBox.Show("Proceso Eliminado ", "Eliminar", MessageBoxButtons.OK);
+                }
             }
-           
         } 
     }
 

@@ -35,7 +35,7 @@
             this.Proceso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Memoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFinalizar = new System.Windows.Forms.Button();
             this.performanceCounter1 = new System.Diagnostics.PerformanceCounter();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -91,15 +91,15 @@
             this.Memoria.Name = "Memoria";
             this.Memoria.ReadOnly = true;
             // 
-            // button1
+            // btnFinalizar
             // 
-            this.button1.Location = new System.Drawing.Point(405, 285);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 37);
-            this.button1.TabIndex = 43;
-            this.button1.Text = "Finalizar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnFinalizar.Location = new System.Drawing.Point(405, 285);
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.Size = new System.Drawing.Size(86, 37);
+            this.btnFinalizar.TabIndex = 43;
+            this.btnFinalizar.Text = "Finalizar";
+            this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
             // performanceCounter1
             // 
@@ -123,7 +123,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(503, 334);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnFinalizar);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Procesos";
@@ -138,7 +138,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Proceso;
         private System.Windows.Forms.DataGridViewTextBoxColumn CPU;
         private System.Windows.Forms.DataGridViewTextBoxColumn Memoria;
